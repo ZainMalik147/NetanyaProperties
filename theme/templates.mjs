@@ -21,7 +21,7 @@ function devImage(ctx, dev, i, which = 0) {
 }
 const devLink = (ctx, dev, placement, inner, cls = 'dev-link') => `<a class="${cls}" href="${ctx.esc(ctx.outboundUrl(ctx.site, dev.website))}" ${ctx.outAttrs(ctx.site, dev, placement)}>${inner}<span class="sr-only">(${ctx.esc(dev.name)} official website, opens in a new tab)</span></a>`;
 const logoPlate = (ctx, dev, cls = '') => dev.logo?.file
-  ? `<figure class="logo-plate is-${dev.logo.background} ${cls}">${devLink(ctx, dev, 'logo', `<img src="/${dev.logo.file}" alt="${ctx.esc(dev.name)} logo" loading="lazy">`, 'logo-link')}<figcaption class="logo-cap">Official logo · identification only</figcaption></figure>`
+  ? `<figure class="logo-plate is-${dev.logo.background} ${cls}">${devLink(ctx, dev, 'logo', `<img src="/${dev.logo.file}" alt="${ctx.esc(dev.name)} logo" loading="lazy">`, 'logo-link')}<figcaption class="sr-only">Official logo of ${ctx.esc(dev.name)}</figcaption></figure>`
   : `<div class="logo-plate is-text ${cls}">${ctx.esc(dev.name)}</div>`;
 const roman = n => ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'][n] || n + 1;
 

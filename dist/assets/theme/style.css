@@ -430,3 +430,6 @@ html.a11y-stop .line > span { transform: none !important; }
 .btn.btn-explore { animation: explorePulseShadow 2.8s ease-out 2.2s infinite; }
 @keyframes explorePulseShadow { 0% { box-shadow: 0 18px 44px -14px rgba(0,0,0,.45), 0 0 0 0 var(--pulse, rgba(255,255,255,.6)); } 75%, 100% { box-shadow: 0 18px 44px -14px rgba(0,0,0,.45), 0 0 0 16px rgba(0,0,0,0); } }
 @media (prefers-reduced-motion: reduce) { .btn.btn-explore { animation: none; } }
+
+/* Logos inside the clickable wrapper need an explicit height (SVGs without width/height otherwise collapse) */
+.logo-link > img { height: 54px; max-width: 220px; }
