@@ -3,6 +3,8 @@
 // drop caps, ruled columns. Hero: magazine split with a 3D point-cloud Mediterranean beneath.
 // Built with logical CSS properties so Hebrew (RTL) can be added later.
 
+// Cache-busting stamp: a new value on every build so browsers fetch the latest CSS/JS despite long asset caching.
+const ASSET_V = Date.now().toString(36);
 const ARROW = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>`;
 const ARROW_R = `<svg class="ico flip-rtl" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>`;
 
@@ -35,11 +37,11 @@ ${seoHead(site, page)}
 <meta name="ga4-id" content="${esc(site.ga4Id || '')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter+Tight:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="/assets/theme/style.css">
+<link rel="stylesheet" href="/assets/theme/style.css?v=${ASSET_V}">
 ${page.preload || ''}
-<script src="/assets/theme/a11y.js"></script>
-<script src="/assets/theme/analytics.js"></script>
-<script type="module" src="/assets/theme/main.js"></script>
+<script src="/assets/theme/a11y.js?v=${ASSET_V}"></script>
+<script src="/assets/theme/analytics.js?v=${ASSET_V}"></script>
+<script type="module" src="/assets/theme/main.js?v=${ASSET_V}"></script>
 </head>
 <body data-page="${page.type || 'page'}" ${page.developer ? `data-developer="${esc(page.developer.slug)}" data-developer-name="${esc(page.developer.name)}"` : ''}>
 <a class="skip" href="#main">Skip to content</a>
