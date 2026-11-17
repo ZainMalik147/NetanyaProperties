@@ -12,15 +12,16 @@ export const LOGO = `<svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="tr
   <path class="m-w1" d="M6 36.5q4-2.4 8 0t8 0 8 0 8 0" fill="none" stroke="var(--blue)" stroke-width="1.4"/>
 </svg>`;
 
-const brand = (site) => `<a class="brand" href="/" aria-label="${site.name} — home">${LOGO}<span class="brand-text"><span class="brand-name">Netanya</span><span class="brand-sub">Properties — The Developer Review</span></span></a>`;
+const brand = (site) => `<a class="brand" href="/" aria-label="${site.name}, home">${LOGO}<span class="brand-text"><span class="brand-name">Netanya</span><span class="brand-sub">Properties · The Developer Review</span></span></a>`;
 
 function devImage(ctx, dev, i, which = 0) {
   const keys = [].concat(dev.images || dev.image || []);
   const k = keys[which];
   return (k && ctx.images.find(im => im.file === k)) || ctx.images[(i * 3 + 1 + which) % ctx.images.length];
 }
+const devLink = (ctx, dev, placement, inner, cls = 'dev-link') => `<a class="${cls}" href="${ctx.esc(ctx.outboundUrl(ctx.site, dev.website))}" ${ctx.outAttrs(ctx.site, dev, placement)}>${inner}<span class="sr-only">(${ctx.esc(dev.name)} official website, opens in a new tab)</span></a>`;
 const logoPlate = (ctx, dev, cls = '') => dev.logo?.file
-  ? `<figure class="logo-plate is-${dev.logo.background} ${cls}"><img src="/${dev.logo.file}" alt="${ctx.esc(dev.name)} logo" loading="lazy"><figcaption class="logo-cap">Official logo · identification only</figcaption></figure>`
+  ? `<figure class="logo-plate is-${dev.logo.background} ${cls}">${devLink(ctx, dev, 'logo', `<img src="/${dev.logo.file}" alt="${ctx.esc(dev.name)} logo" loading="lazy">`, 'logo-link')}<figcaption class="logo-cap">Official logo · identification only</figcaption></figure>`
   : `<div class="logo-plate is-text ${cls}">${ctx.esc(dev.name)}</div>`;
 const roman = n => ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'][n] || n + 1;
 
@@ -36,12 +37,13 @@ ${seoHead(site, page)}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter+Tight:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/theme/style.css">
 ${page.preload || ''}
+<script src="/assets/theme/a11y.js"></script>
 <script src="/assets/theme/analytics.js"></script>
 <script type="module" src="/assets/theme/main.js"></script>
 </head>
 <body data-page="${page.type || 'page'}" ${page.developer ? `data-developer="${esc(page.developer.slug)}" data-developer-name="${esc(page.developer.name)}"` : ''}>
 <a class="skip" href="#main">Skip to content</a>
-<div class="topbar"><div class="wrap topbar-inner"><span>Issue Nº 01 — Netanya, Israel</span><span class="tb-mid">An independent editorial guide · Not affiliated with the developers featured</span><span>${new Date().getFullYear()}</span></div></div>
+<div class="topbar"><div class="wrap topbar-inner"><span>Issue Nº 01 · Netanya, Israel</span><span class="tb-mid">An independent editorial guide · Not affiliated with the developers featured</span><span>${new Date().getFullYear()}</span></div></div>
 <header class="site-header">
   <div class="wrap header-inner">
     ${brand(site)}
@@ -70,7 +72,7 @@ ${body}
       <nav aria-label="Guide"><p class="f-label">The guide</p><a href="/about/">About</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Contact</a><a href="/credits/">Image credits</a></nav>
       <nav aria-label="Legal"><p class="f-label">Legal &amp; access</p><a href="/disclaimer/">Disclaimer</a><a href="/privacy-policy/">Privacy policy</a><a href="/accessibility/">Accessibility statement</a><a href="#" data-open-consent>Cookie settings</a><button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button></nav>
     </div>
-    <div class="footer-legal"><p>${esc(site.name)} is an independent editorial directory. It is not a licensed real estate broker, does not sell or market property, and is not affiliated with, sponsored or endorsed by any company featured. Logos and trademarks belong to their owners and are shown for identification only.</p><p>© ${new Date().getFullYear()} ${esc(site.name)}</p></div>
+    <div class="footer-legal"><p>${esc(site.name)} is an independent editorial directory. It is not a licensed real estate broker, does not sell or market property, and is not affiliated with any company featured. Logos and trademarks belong to their owners and are shown for identification only.</p><p>© ${new Date().getFullYear()} ${esc(site.name)}</p></div>
   </div>
 </footer>
 <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie preferences" hidden>
@@ -85,7 +87,7 @@ export function home(ctx) {
   const { site, devs, images, esc, photo, outAttrs, outboundUrl, orgJsonLd } = ctx;
   const hero = images.find(i => i.file === site.heroImage) || images[0];
   const second = images.find(i => i.file === site.secondImage) || images[1] || hero;
-  const marquee = site.marquee || ['Mediterranean coastline', 'Urban renewal', 'Park HaYam', 'Residential towers', 'Sharon Plain', 'Sea-view living'];
+  const marquee = site.marquee || ['Netanya developers', 'New residential towers', 'Urban renewal projects', 'Sea view apartments', 'Mediterranean coastline'];
 
   const body = `
 <section class="hero" aria-labelledby="hero-title">
@@ -94,11 +96,11 @@ export function home(ctx) {
       <p class="kicker reveal">${esc(site.hero.eyebrow)}</p>
       <h1 id="hero-title" class="hero-title">${site.hero.title.split(' ').map((w, i) => `<span class="line"><span style="--i:${i}">${i === site.hero.title.split(' ').length - 1 ? `<em>${esc(w)}</em>` : esc(w)}</span></span>`).join(' ')}</h1>
       <p class="hero-sub reveal" style="--d:.4s">${esc(site.hero.subtitle)}</p>
-      <a class="btn btn-solid reveal" style="--d:.55s" href="#developers">${esc(site.hero.button)} ${ARROW_R}</a>
+      <a class="btn btn-solid btn-explore reveal" style="--d:.55s" href="#developers">${esc(site.hero.button)} ${ARROW_R}</a>
     </div>
     <figure class="hero-cover reveal-clip">
       <div class="cover-inner" data-tilt>${photo(hero, { eager: true, sizes: '(min-width: 900px) 55vw, 100vw', alt: hero.subject })}</div>
-      <figcaption><span>Cover</span> ${esc(hero.subject)}</figcaption>
+      <figcaption>${esc(hero.subject)}</figcaption>
     </figure>
   </div>
   <div class="sea" aria-hidden="true"><canvas class="sea-gl"></canvas><div class="sea-fallback"></div>
@@ -139,7 +141,7 @@ export function home(ctx) {
         ${d.listingType === 'sponsored' ? '<span class="tag-sponsored">Sponsored</span>' : '<span class="chapter">Editorial profile</span>'}
       </header>
       <div class="spread-grid">
-        <figure class="spread-photo reveal-clip">${photo(im, { sizes: '(min-width: 900px) 58vw, 100vw', alt: im.subject })}<figcaption>${esc(im.subject)}</figcaption></figure>
+        <figure class="spread-photo reveal-clip">${devLink(ctx, d, 'image', photo(im, { sizes: '(min-width: 900px) 58vw, 100vw', alt: im.subject }))}<figcaption>${esc(im.subject)}</figcaption></figure>
         <div class="spread-text">
           ${logoPlate(ctx, d, 'reveal')}
           <h3 id="dev-${d.slug}-name" class="spread-name reveal">${esc(d.name)}</h3>
@@ -206,7 +208,7 @@ export function profile(ctx, d) {
       <p class="p-standfirst reveal">${esc(d.summary)}</p>
     </div>
   </header>
-  <figure class="p-photo reveal-clip"><div data-parallax>${photo(im, { eager: true, alt: im.subject })}</div><figcaption class="wrap">${esc(im.subject)}</figcaption></figure>
+  <figure class="p-photo reveal-clip"><div data-parallax>${devLink(ctx, d, 'image', photo(im, { eager: true, alt: im.subject }))}</div><figcaption class="wrap">${esc(im.subject)}</figcaption></figure>
   <div class="wrap p-grid">
     <aside class="p-side" aria-label="At a glance">
       <p class="mini-label">At a glance</p>
@@ -238,7 +240,7 @@ export function profile(ctx, d) {
 </article>`;
   return layout(ctx, {
     path: `/developers/${d.slug}/`, type: 'profile', developer: d, ogType: 'profile',
-    title: `${d.name} — Residential Developer in Netanya | ${site.name}`,
+    title: `${d.name}, Residential Developer in Netanya | ${site.name}`,
     description: (d.seoDescription || `${d.summary} Independent profile with background, Netanya projects and official website.`).slice(0, 300),
     image: im.file + '-1920.webp', jsonld: developerJsonLd(site, d),
   }, body);

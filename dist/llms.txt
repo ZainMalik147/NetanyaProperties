@@ -1,16 +1,41 @@
 # Netanya Properties
 
-> An independent guide to established real estate developers active in Netanya, Israel — their backgrounds, areas of activity and official websites.
+> An independent guide to established real estate developers active in Netanya, Israel, covering their backgrounds, areas of activity and official websites.
 
-Netanya Properties is an independent editorial directory. It is not a real estate agency or broker, does not sell property and is not affiliated with the companies it profiles.
+Netanya Properties is an independent editorial directory about real estate developers in Netanya, Israel. It is not a real estate agency or broker, does not sell property and is not affiliated with the companies it profiles. Each profile links to the developer's official website.
+
+## Key facts
+- Website: https://www.netanya-properties.com/
+- Topic: Residential real estate developers active in Netanya, Israel
+- Developers profiled: Azorim, Aura Israel, Africa Israel Residences, Ashtrom Residences
+- Contact: Or@netanya-properties.com
 
 ## Developer profiles
-- [Azorim](https://www.netanya-properties.com/developers/azorim/): Azorim is a Tel Aviv Stock Exchange-listed residential developer that has been building homes across Israel for around six decades.
-- [Aura Israel](https://www.netanya-properties.com/developers/aura/): Aura is a Tel Aviv Stock Exchange-listed developer that concentrates on urban renewal, replacing ageing housing blocks with new residential districts.
-- [Africa Israel Residences](https://www.netanya-properties.com/developers/africa-israel/): Africa Israel Residences is the TASE-listed homebuilding arm of the Africa Israel group, known for its Savyonim-branded residential communities.
-- [Ashtrom Residences](https://www.netanya-properties.com/developers/ashtrom/): Ashtrom Residences, formerly Ashdar, is the wholly owned residential development arm of the TASE-listed Ashtrom Group.
+- [Azorim](https://www.netanya-properties.com/developers/azorim/): Azorim is a Tel Aviv Stock Exchange-listed residential developer that has been building homes across Israel for around six decades. Official website: https://www.azorim.co.il/en
+- [Aura Israel](https://www.netanya-properties.com/developers/aura/): Aura is a Tel Aviv Stock Exchange-listed developer that concentrates on urban renewal, replacing ageing housing blocks with new residential districts. Official website: https://auraisrael.co.il/
+- [Africa Israel Residences](https://www.netanya-properties.com/developers/africa-israel/): Africa Israel Residences is the TASE-listed homebuilding arm of the Africa Israel group, known for its Savyonim-branded residential communities. Official website: https://res.afi-g.com/en/pages/home.aspx
+- [Ashtrom Residences](https://www.netanya-properties.com/developers/ashtrom/): Ashtrom Residences, formerly Ashdar, is the wholly owned residential development arm of the TASE-listed Ashtrom Group. Official website: https://www.ashtromegurim.co.il/en
+
+## Projects mentioned
+- Azorim Hofim EAST by Azorim (Park HaYam, Netanya): Residential towers
+- Azorim Hofim WEST by Azorim (Park HaYam, Netanya): Residential tower
+- N Sokolov by Azorim (Corner of Weizmann and Sokolov streets, north Netanya): Residential towers
+- N Weizman by Azorim (Weizmann Street, north Netanya): Residential towers
+- N HaHistadrut by Azorim (Corner of HaRav Kook and HaHistadrut streets, north Netanya): Residential buildings
+- AURA THE STRIP (Netanya Ben Tzvi) by Aura Israel (Ben Zvi Street, central Netanya): Urban renewal (pinui-binui)
+- Aura City Hadera (located in Hadera) by Aura Israel (Herbert Samuel / Sheshet HaYamim, Hadera city centre): Residential towers with commercial base
+- Aura Jerusalem (located in Jerusalem) by Aura Israel (Talpiot, Jerusalem): Urban renewal
+- Savyon Gardens by Africa Israel Residences (Park HaYam, Netanya): Residential tower
+- Savyoney Hashmura by Africa Israel Residences (Near Ir Yamim, west Netanya): Residential towers (Africa Urban Renewal)
+- Savyon City Towers by Africa Israel Residences (Borochov / Andrius / HaRav Kook streets, central Netanya): Urban renewal, residential towers
+- Savion at the Lake by Africa Israel Residences (Agamim, west Netanya): Residential tower
+- Galei Netanya by Ashtrom Residences (Park HaYam, Netanya): Residential towers
+- GO YAFO TEL-AVIV (located in Tel Aviv) by Ashtrom Residences (Heinrich Heine Road, Jaffa, Tel Aviv-Jaffa): Residential towers (with Acro Real Estate)
+- Ramat HaSharon Resort Strip (located in Ramat HaSharon) by Ashtrom Residences (Neve Gan, Ramat HaSharon): Residential buildings
+- HADAR Givat Shmuel (located in Givat Shmuel) by Ashtrom Residences (Ramat Hadar, Givat Shmuel): Residential buildings
 
 ## About
 - [About the guide](https://www.netanya-properties.com/about/)
 - [Editorial policy](https://www.netanya-properties.com/editorial-policy/)
 - [Disclaimer](https://www.netanya-properties.com/disclaimer/)
+- [Contact](https://www.netanya-properties.com/contact/)
