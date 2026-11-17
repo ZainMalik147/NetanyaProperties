@@ -89,7 +89,7 @@ export function home(ctx) {
   const { site, devs, images, esc, photo, outAttrs, outboundUrl, orgJsonLd } = ctx;
   const hero = images.find(i => i.file === site.heroImage) || images[0];
   const second = images.find(i => i.file === site.secondImage) || images[1] || hero;
-  const marquee = site.marquee || ['Netanya developers', 'New residential towers', 'Urban renewal projects', 'Sea view apartments', 'Mediterranean coastline'];
+  const marquee = site.marquee || ['The developers shaping Netanya', 'New homes along the Mediterranean coast', 'Urban renewal across the city', 'Four established names, one independent guide'];
 
   const body = `
 <section class="hero" aria-labelledby="hero-title">
