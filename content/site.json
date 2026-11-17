@@ -23,7 +23,6 @@
   "legal": { "jurisdiction": "IL", "retention": "14 months", "updated": "2026-11-14", "accessibility": true, "accessibilityContact": "the site editor" },
   "heroImage": "assets/img/netanya-cliffs-aerial",
   "secondImage": "assets/img/netanya-sunset-sea",
-  "marquee": ["The developers shaping Netanya", "New homes along the Mediterranean coast", "Urban renewal across the city", "Four established names, one independent guide"],
   "hero": {
     "eyebrow": "Netanya · Mediterranean Coast · Israel",
     "title": "The Developers Shaping Netanya",

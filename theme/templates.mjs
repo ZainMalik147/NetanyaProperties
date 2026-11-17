@@ -36,7 +36,7 @@ ${seoHead(site, page)}
 <meta name="gtm-id" content="${esc(site.gtmId || '')}">
 <meta name="ga4-id" content="${esc(site.ga4Id || '')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter+Tight:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/theme/style.css?v=${ASSET_V}">
 ${page.preload || ''}
 <script src="/assets/theme/a11y.js?v=${ASSET_V}"></script>
@@ -89,7 +89,6 @@ export function home(ctx) {
   const { site, devs, images, esc, photo, outAttrs, outboundUrl, orgJsonLd } = ctx;
   const hero = images.find(i => i.file === site.heroImage) || images[0];
   const second = images.find(i => i.file === site.secondImage) || images[1] || hero;
-  const marquee = site.marquee || ['The developers shaping Netanya', 'New homes along the Mediterranean coast', 'Urban renewal across the city', 'Four established names, one independent guide'];
 
   const body = `
 <section class="hero" aria-labelledby="hero-title">
@@ -110,7 +109,6 @@ export function home(ctx) {
   </div>
 </section>
 
-<div class="marquee" aria-hidden="true"><div class="marquee-track">${[...marquee, ...marquee].map(m => `<span>${esc(m)}</span><i>✦</i>`).join('')}</div></div>
 
 <section class="intro" aria-labelledby="intro-title">
   <div class="wrap intro-grid">

@@ -4,8 +4,8 @@
   --ink: #0B1F38; --ink-2: #3D4C5E; --muted: #5B6878;
   --blue: #1B5E9E; --blue-2: #2E7BC4; --glass: #9CC3D5; --deep: #071A30;
   --gold: #A9814F;
-  --serif: "Bodoni Moda", "Didot", Georgia, serif;
-  --sans: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   --ease: cubic-bezier(.19, 1, .22, 1);
   --gutter: clamp(16px, 4.5vw, 56px);
   color-scheme: light;
@@ -433,3 +433,13 @@ html.a11y-stop .line > span { transform: none !important; }
 
 /* Logos inside the clickable wrapper need an explicit height (SVGs without width/height otherwise collapse) */
 .logo-link > img { height: 54px; max-width: 220px; }
+
+/* ===== Readability: simple sans-serif type, no italics ===== */
+em, .menu-big span, .toc-n, .pull, .pj-n, .p-standfirst, .prose .lead { font-style: normal; }
+.hero-title, .section-title, .spread-name, .p-title, .page-title, .coast-quote, .next-name, .p-band h2, .footer-mast { font-weight: 600; letter-spacing: -.035em; }
+.hero-title, .section-title, .spread-name, .p-title, .page-title { line-height: 1.02; }
+.intro-text, .pull, .p-standfirst, .prose .lead { font-weight: 500; letter-spacing: -.01em; }
+.toc-name, .pj-name, .p-pj-name, .menu-big, .p-side dd, .contact-email, .brand-name { font-weight: 600; letter-spacing: -.01em; }
+.brand-name { letter-spacing: .06em; }
+.dropcap::first-letter { font-weight: 700; }
+.footer-mast { -webkit-text-stroke-width: 1.2px; }
