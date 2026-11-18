@@ -5,16 +5,16 @@
 Netanya Properties is an independent editorial directory about real estate developers in Netanya, Israel. It is not a real estate agency or broker, does not sell property and is not affiliated with the companies it profiles. Each profile links to the developer's official website.
 
 ## Key facts
-- Website: https://www.netanya-properties.com/
+- Website: https://netanya.properties/
 - Topic: Residential real estate developers active in Netanya, Israel
 - Developers profiled: Azorim, Aura Israel, Africa Israel Residences, Ashtrom Residences
-- Contact: editor@netanya-properties.com
+- Contact: editor@netanya.properties
 
 ## Developer profiles
-- [Azorim](https://www.netanya-properties.com/developers/azorim/): Azorim is a Tel Aviv Stock Exchange-listed residential developer that has been building homes across Israel for around six decades. Official website: https://www.azorim.co.il/en
-- [Aura Israel](https://www.netanya-properties.com/developers/aura/): Aura is a Tel Aviv Stock Exchange-listed developer that concentrates on urban renewal, replacing ageing housing blocks with new residential districts. Official website: https://auraisrael.co.il/
-- [Africa Israel Residences](https://www.netanya-properties.com/developers/africa-israel/): Africa Israel Residences is the TASE-listed homebuilding arm of the Africa Israel group, known for its Savyonim-branded residential communities. Official website: https://res.afi-g.com/en/pages/home.aspx
-- [Ashtrom Residences](https://www.netanya-properties.com/developers/ashtrom/): Ashtrom Residences, formerly Ashdar, is the wholly owned residential development arm of the TASE-listed Ashtrom Group. Official website: https://www.ashtromegurim.co.il/en
+- [Azorim](https://netanya.properties/developers/azorim/): Azorim is a Tel Aviv Stock Exchange-listed residential developer that has been building homes across Israel for around six decades. Official website: https://www.azorim.co.il/en
+- [Aura Israel](https://netanya.properties/developers/aura/): Aura is a Tel Aviv Stock Exchange-listed developer that concentrates on urban renewal, replacing ageing housing blocks with new residential districts. Official website: https://auraisrael.co.il/
+- [Africa Israel Residences](https://netanya.properties/developers/africa-israel/): Africa Israel Residences is the TASE-listed homebuilding arm of the Africa Israel group, known for its Savyonim-branded residential communities. Official website: https://res.afi-g.com/en/pages/home.aspx
+- [Ashtrom Residences](https://netanya.properties/developers/ashtrom/): Ashtrom Residences, formerly Ashdar, is the wholly owned residential development arm of the TASE-listed Ashtrom Group. Official website: https://www.ashtromegurim.co.il/en
 
 ## Projects mentioned
 - Azorim Hofim EAST by Azorim (Park HaYam, Netanya): Residential towers
@@ -35,7 +35,7 @@ Netanya Properties is an independent editorial directory about real estate devel
 - HADAR Givat Shmuel (located in Givat Shmuel) by Ashtrom Residences (Ramat Hadar, Givat Shmuel): Residential buildings
 
 ## About
-- [About the guide](https://www.netanya-properties.com/about/)
-- [Editorial policy](https://www.netanya-properties.com/editorial-policy/)
-- [Disclaimer](https://www.netanya-properties.com/disclaimer/)
-- [Contact](https://www.netanya-properties.com/contact/)
+- [About the guide](https://netanya.properties/about/)
+- [Editorial policy](https://netanya.properties/editorial-policy/)
+- [Disclaimer](https://netanya.properties/disclaimer/)
+- [Contact](https://netanya.properties/contact/)
